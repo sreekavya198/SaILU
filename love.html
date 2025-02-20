@@ -35,7 +35,8 @@
         .heading-main {
             font-size: 3.5rem;
             color: #FF0000;  /* Red color */
-            text-shadow: 0 0 5px #FF0000, 0 0 10px #FF0000;  /* Reduced glow effect */
+            /*text-shadow: 0 0 5px #FF0000, 0 0 10px #FF0000;  /* Reduced glow effect */
+            text-shadow: 0 0 5px #FF0000;
             background: linear-gradient(45deg, #FF1493, #FF69B4, #FFB6C1, #FF1493);
             background-size: 300% 300%;
             -webkit-background-clip: text;
@@ -61,12 +62,14 @@
 
         .timeline {
             display: flex;
+            flex-wrap: wrap;
             gap: 4rem;
             padding: 2rem 4rem;
             position: relative;
         }
 
         .timeline-item {
+            flex: 1 1 auto;
             min-width: 300px;
             background: rgba(255, 255, 255, 0.2);
             backdrop-filter: blur(10px);
@@ -172,7 +175,7 @@
     <script>
         // Create floating hearts
         function createFloatingHearts() {
-            const hearts = ['❤️', '💖', '💝', '💕'];
+            const hearts = ['❤️', '💖', '💝', '💕','💞','💘'];
             for (let i = 0; i < 15; i++) {
                 const heart = document.createElement('div');
                 heart.className = 'floating-heart';
@@ -188,24 +191,64 @@
         // Timeline data
         const timelineEvents = [
             {
+                title: "First Talk ⌨️🗣️",
+                description: "The day on which universe was in favour to me",
+                date: "October 29th, 2023"
+            },
+            {
                 title: "First Meet 🌟",
                 description: "The moment my world changed forever",
-                date: "January 15"
+                date: "November 4th, 2023"
             },
             {
-                title: "First Date 🍽️",
-                description: "The start of our beautiful journey",
-                date: "February 1"
+                title: "First Long Call 📞",
+                description: "The Day of Strong Foundation",
+                date: "November 9th-10th, 2023"
             },
             {
-                title: "First Kiss 💋",
-                description: "A magical moment under the stars",
-                date: "February 14"
+                title: "First Video Call 📸",
+                description: "Moment of forgetting the world",
+                date: "November 10th, 2023"
             },
             {
                 title: "I Love You ❤️",
-                description: "When our hearts became one",
-                date: "March 1"
+                description: "When hearts became expressive",
+                date: "November 14th, 2023"
+            },
+            {
+                title: "First kind of Fight 👊",
+                description: "The day on which our bond has grown further",
+                date: "November 14th-15th, 2023"
+            },
+            {
+                title: "First Touch 🥰",
+                description: "Gopikamma Moment",
+                date: "November 25th, 2023"
+            },
+            {
+                title: "First ILU in-person 🫣",
+                description: "Love growing & growing...",
+                date: "November 27th, 2023"
+            },
+            {
+                title: "Engaged 💍",
+                description: "The start of our beautiful journey",
+                date: "November 29th, 2023"
+            },
+            {
+                title: "First Kiss 💋",
+                description: "A magical moment under the black blanket",
+                date: "December 4th, 2023"
+            },
+            {
+                title: "Marriage 👩‍❤️‍💋‍👨",
+                description: "Forever Begins!!!",
+                date: "February 28th, 2024"
+            },
+            {
+                title: "Lot lot many other moments 👩‍❤️‍💋‍👨",
+                description: "Life goes on - Love grows stronger and stronger",
+                date: "Forever - will keep adding the moments forever"
             }
         ];
 

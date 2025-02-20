@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Love Login by Shobhit</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Love Login</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
@@ -139,7 +139,7 @@
 <body>
     <form id="login-form">
         <h2>Enter Your Name</h2>
-        <label for="code">My Love:</label>
+        <!-- <label for="code">My Love:</label> -->
         <input type="text" id="code" name="code" placeholder="Your Name">
         <button id="submit-btn">Login</button>
     </form>
@@ -151,17 +151,17 @@
         const submitBtn = document.getElementById('submit-btn');
         const resultDiv = document.getElementById('result');
 
-        const secretCode = 'Shobhit'; // Replace with your secret code
+        const secretCode = 'Sandeep'; // Replace with your secret code
         const nextPageUrl = 'main.html'; // Replace with the URL of the new page
 
         form.addEventListener('submit', (e) => {
             e.preventDefault();
             const userInput = codeInput.value.trim();
             if (userInput === secretCode) {
-                resultDiv.innerHTML = 'Baby';
+                resultDiv.innerHTML = 'You are Awesome!! ILoveYou❤️❤️';
                 window.location.href = nextPageUrl; // Redirect to new page
             } else {
-                resultDiv.innerHTML = 'Naa Tum meri baby nhi hoo kon hooo tum kaha hai meri Shobhit';
+                resultDiv.innerHTML = 'Access Denied❌!! This page is accessible only for my baby❤️...';
             }
         });
 

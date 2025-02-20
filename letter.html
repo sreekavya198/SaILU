@@ -73,8 +73,8 @@
         }
 
         .next-button {
-            position: absolute;
-            bottom: 30px;
+            position: relative;
+            bottom: 3px;
             left: 50%;
             transform: translateX(-50%) scale(0.9);
             padding: 15px 40px;
@@ -148,19 +148,19 @@
         }
 
         .container {
-    position: relative;
-    width: 90%;
-    max-width: 800px;
-    max-height: 80vh; /* Limits the container's height to 80% of the screen height */
-    padding: 40px;
-    background: rgba(255, 255, 255, 0.15);
-    border-radius: 25px;
-    backdrop-filter: blur(12px);
-    box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    overflow-y: auto; /* Adds a scroll bar if the content is too long */
-    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
-}
+            position: relative;
+            width: 90%;
+            max-width: 800px;
+            max-height: 80vh; /* Limits the container's height to 80% of the screen height */
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 25px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            overflow-y: auto; /* Adds a scroll bar if the content is too long */
+            transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+        }
 
     </style>
 </head>
@@ -181,19 +181,50 @@
     </div>
 
     <script>
-      const loveLetter = `Hey Love,
+//       const loveLetter = `Hey Love,
 
-Every day with you feels like a beautiful gift. You make everything better with your smile and the way you care. When I’m with you, I feel so happy and peaceful, like nothing in the world could go wrong.
+// Every day with you feels like a beautiful gift. You make everything better with your smile and the way you care. When I’m with you, I feel so happy and peaceful, like nothing in the world could go wrong.
 
-You’re the one I think about all the time. Your laughter is the best sound, and your presence makes everything brighter. I love how we can talk about anything, laugh at silly things, and be ourselves around each other.
+// You’re the one I think about all the time. Your laughter is the best sound, and your presence makes everything brighter. I love how we can talk about anything, laugh at silly things, and be ourselves around each other.
 
-Thank you for being you. I feel lucky to have you by my side, and I promise to always be there for you.
+// Thank you for being you. I feel lucky to have you by my side, and I promise to always be there for you.
+
+// With all my heart, 
+// Forever Yours.`;
+
+const loveLetter = `Hey Love,
+
+What should I start and where should I start -
+Firstly, Happy first anniversary, my darling💓!! It's already been a year for our marriage and you got to know about me throughout the year. I love you sooo soooooooooooo much kanna🥰, which you already knew😉. Whenever I lie on your shoulder, I forget about everything and I wouldn't need anything else in the world, that's my safest and peaceful place babyyy. You are the one I think about all the time. Your laughter is the best sound for me.
+
+And you wanna know what I love you for na, here you go -
+I love you for bearing my mood swings.
+I love you for waiting for me to finish talking.
+I love you for holding my hand while crossing roads.
+I love you for taking care of me when I’m unwell.
+I love you for loving me in your own way.
+I love you for being my best friend.
+I love you for holding me tight when I overthink.
+I love you for checking if I reached safely.
+I love you for listening to my random stories.
+
+Ofc, there are also a few other (again chota chota ka) things which make me feel more and more happy. I hope you are aware of those😁 - considering me, keeping your ego aside, understanding what I am saying, better lifestyle.. but fine fine.. let's promise each other now to be more focused on a healthy lifestyle, be super lovable with each other, personal preferences, mental health, having quality time together.. Why all these ante -  my happiness comes from the little, cute things you do— the way you smile at me, the way you hold my hand, the way you call my name with love. These small moments mean the world to me🫠, and I want to cherish these forever.
+
+More than anything, I want us to take care of each other— our love, our health, and our happiness. You and our well-being will always be my top priority. So let’s enjoy life in the simplest ways— morning cuddles, surprise hugs, random "I love you" messages, and laughing over silly things. These little joys make my heart overflow with love.
+
+Don't judge me all the time kannamalu - whatever I say is only just for our health and happiness, because that's my 1st priority.
+
+I love seeing you happy
+I love seeing you healthy
+I love you
+I love you
+I love you
+I love you beyond words, I can’t wait to celebrate many more anniversaries with you, always finding happiness in the tiniest moments, and I promise to always be there for you.
 
 With all my heart, 
 Forever Yours.`;
 
-
-        const signature = "❤️ Your Forever Love ❤️";
+        const signature = "❤️ Yours Forever Love ❤️";
 
         const letter = document.querySelector('.letter');
         const signatureElement = document.querySelector('.signature');
