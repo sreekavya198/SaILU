@@ -72,6 +72,14 @@
             border-radius: 50px 50px 0 0; /* Heart-shaped input box */
             position: relative;
         }
+        input::placeholder {
+            color: rgb(209, 28, 89); /* Change to your desired color */
+            opacity: 1; /* Ensure full opacity */
+        }
+
+        input:focus::placeholder {
+            color: lightgray; /* Optional: Change color when input is focused */
+        }
 
         input:focus {
             background: linear-gradient(145deg, #ff4d79, #ffb3cc);
